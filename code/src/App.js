@@ -2,8 +2,8 @@ import React from 'react'
 import './index.css';
 import Artists from 'Components/Artists'
 import Header from 'Components/Header'
-
 /* import Images from 'Components/Images' */
+
 import data from './data.json'
 
 console.log(data);

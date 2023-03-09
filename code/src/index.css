@@ -42,7 +42,7 @@ h1 {
 .album-container {
   grid-template-columns: 1fr; 
   padding: 0 10px; 
-  max-width: 480px;
+  
 }
 /* Album images */
 img {
@@ -64,10 +64,31 @@ div#root {
     background-color: black;
     
   }
-div.album-container {
-  width: 100%;
-}
 
+
+
+.heart,
+.play,
+.dots {
+  margin: 0 10px;
+  width: 20px;
+  height: 20px;
+
+}
+.icons-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  top:calc(50% - 25px);
+  left: calc(36% - 25px);
+  z-index: 1;
+  }
+  
+  .dots{
+   width: 30px;
+  }
 
 
 
