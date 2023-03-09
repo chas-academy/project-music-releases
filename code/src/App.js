@@ -1,8 +1,8 @@
 import React from 'react'
-import Artists from 'Components/Artist/Artists'
-import Images from 'Components/Images/Images'
+import Artists from 'Components/Artists'
+import Images from 'Components/Images'
 /* import Album from 'components/Album' */
-import Header from 'Components/Header/Header'
+import Header from 'Components/Header'
 import data from './data.json'
 
 console.log(data);
@@ -20,7 +20,7 @@ export const App = () => {
                 <Artists artists={album.name} />
               </a>
               {/* <Albums albums={albums.artists} /> */}
-              <Images images={album.images} />
+              <Images images={album.images} /* the images url */ />
             </div>
           ))}
         </div>
