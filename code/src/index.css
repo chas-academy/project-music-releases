@@ -5,8 +5,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(139, 139, 139);
-  border: 1px solid green;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -15,9 +13,15 @@ code {
 
 /* HEADER */
 header {
-  background-color: rgb(107, 107, 107);
   width: 100%;
+  overflow-x: hidden;
   border: 1px solid rgb(223, 25, 150);
+}
+/* New albums & singels */
+h1 {
+  color: rgb(255, 255, 255);
+  border: 1px solid red;
+  text-align: center;
 }
 
 .inner-wrapper {
@@ -26,79 +30,72 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
 }
-
-/* H1 NEW ALBUMS & SINGELS */
-h1 {
-  color: rgb(28, 28, 28);
-  border: 1px solid red;
-}
-
 /* ALBUM  */
 /*The big container*/
 .parent-container {
   display: grid;
   grid-template-columns: 1fr;
-  justify-content: center;
-  margin: 20px;
+  gap: 10px;
+  margin: 20px; 
 }
-/*Albums container wich contains all the div albums */
+/* Albums container wich contains all the div albums */
 .album-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 25px;
-  justify-content: center;
-  margin: 20px;
-  height: auto;
-  width: 100%;
-  border: 2px solid purple;
+  grid-template-columns: 1fr; 
+  padding: 0 10px; 
+  max-width: 480px;
 }
 /* Album images */
 img {
   height: auto;
   width: 100%;
 }
-.albumcover{
-  position: relative;
+/* Album titles*/
+p {
+  color:white;
+  border: 1px solid pink;
+}
+
+div#root {
+    overflow-x: hidden;
+    margin: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: black;
+    
+  }
+div.album-container {
+  width: 100%;
 }
 
 
 
 
-/* RESPONSIVE DESIGN MOBILE */
-@media (min-width: 667px) {
-  .parent-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    /*justify-content: center;*/
-    grid-column-gap: 10px;
-    max-width: 668px;
-    margin: 10px;
-  }
-  .icons{
-    display: grid;
-    grid-template-columns: 1fr;
-    /*justify-content: center;*/
-    align-items: center;
-    height: 70%;
+ /* tablet */
+
+ @media (min-width: 667px) and (max-width: 1024px){
+  .album-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr; 
+      padding: 0 10px; 
+      justify-self: center;
   }
 }
 
-/* RESPONSIVE DESIGN TABLET*/
- @media( max-width:1024px ){
-  .main-container{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  /*justify-content: center; */
-  margin: 20px;
-  grid-column-gap: 15px;
-
-  }
-  .icons{
+/* desktop */ 
+@media (min-width: 1025px) {
+  .album-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-    height: 70%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+    justify-self: center;
+    border: 3px solid rgb(255, 255, 255); 
   }
-
+  
 }
+
+/* mobil */
+/* @media screen and (max-width: 480px) {
+  
+}
+ */

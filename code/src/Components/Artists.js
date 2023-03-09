@@ -6,12 +6,11 @@ const Artists = (props) => {
   console.log(props);
   return (
     <>
-      {props.artists.map((artist) => (
-        <p>{artist.name}</p>
-      ))}
+      {props.artists.map((artist) => {
+        return <p>{artist.name}</p>
+      })}
     </>
   )
 }
-
 // The Album function is avalible to all the other codes that we write //
 export default Artists;
