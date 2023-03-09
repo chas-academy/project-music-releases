@@ -11,6 +11,10 @@ code {
     monospace;
 }
 
+/*- Artist name - 14px Helvetica #a0a0a0*/
+
+
+
 /* HEADER */
 header {
   width: 100%;
@@ -20,7 +24,7 @@ header {
 /* New albums & singels */
 h1 {
   color: rgb(255, 255, 255);
-  border: 1px solid red;
+  border: 1px solid rgb(250, 0, 0);
   text-align: center;
 }
 
@@ -51,8 +55,10 @@ img {
 }
 /* Album titles*/
 p {
-  color:white;
+  color: #ffffff;
   border: 1px solid pink;
+  font-family: Helvetica;
+  font-size: 14px;
 }
 
 div#root {
@@ -93,15 +99,16 @@ div#root {
 
 
  /* tablet */
-
  @media (min-width: 667px) and (max-width: 1024px){
-  .album-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr; 
-      padding: 0 10px; 
-      justify-self: center;
-  }
+ .album-container {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     justify-self: center;
+     padding: 0 10px;
+     gap: 10px;
+ }
 }
+
 
 /* desktop */ 
 @media (min-width: 1025px) {

@@ -18,12 +18,12 @@ export const App = () => {
         <div className="album-container">
           {data.albums.items.map((album) => (
             <div key={album.id}>
-              <a href={album.external_urls.spotify}>
-                <Artists artists={album.artists} />
-              </a>
               <div className="Images">
                 <img src={album.images[imageIndex].url} alt={album.name} />
               </div>
+              <a href={album.external_urls.spotify}>
+                <Artists artists={album.artists} />
+              </a>
             </div>
           ))}
         </div>
