@@ -1,26 +1,27 @@
 import React from 'react'
 import Artists from 'Components/Artists'
-import Images from 'Components/Images'
-/* import Album from 'components/Album' */
 import Header from 'Components/Header'
+/* import Images from 'Components/Images' */
 import data from './data.json'
 
 console.log(data);
 
-/* the mother ship of components */
 export const App = () => {
+  const imageIndex = 0; // index of the image you want to display
+
   return (
     <>
       <Header />
-      <main className="parent-container"/* Parent album container */>
-        <div className="album-container"/* The album containers */>
+      <main className="parent-container">
+        <div className="album-container">
           {data.albums.items.map((album) => (
             <div key={album.id}>
-              <a href={album.external_urls.spotify}/* the spotify album url list */>
-                <Artists artists={album.name} />
+              <a href={album.external_urls.spotify}>
+                <Artists artists={album.artists} />
               </a>
-              {/* <Albums albums={albums.artists} /> */}
-              <Images images={album.images} /* the images url */ />
+              <div className="Images">
+                <img src={album.images[imageIndex].url} alt={album.name} />
+              </div>
             </div>
           ))}
         </div>
@@ -28,6 +29,7 @@ export const App = () => {
     </>
   );
 }
+
 /* import React from 'react';
 import Header from 'components/Header';
 import Artists from 'components/Artists';

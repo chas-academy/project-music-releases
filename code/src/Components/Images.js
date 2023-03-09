@@ -1,8 +1,8 @@
-import React from 'react';
+import React from 'react'
 
 // This is a component // This is the Images component //
 const Images = (props) => {
-  console.log(props); // Is this an argument?//
+  console.log(props);
   return (
     <div>
       {props.images.map((singleimage) => <img src={singleimage.url} alt="album cover" />)}

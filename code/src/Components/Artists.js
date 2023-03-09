@@ -4,7 +4,13 @@ import React from 'react';
 // exoprt beofre const //
 const Artists = (props) => {
   console.log(props);
-  return (<h1>{props.artists}</h1>)
+  return (
+    <>
+      {props.artists.map((artist) => (
+        <p>{artist.name}</p>
+      ))}
+    </>
+  )
 }
 
 // The Album function is avalible to all the other codes that we write //

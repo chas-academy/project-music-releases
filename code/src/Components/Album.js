@@ -6,7 +6,6 @@ const Album = (props) => {
   return (
     <div className="album-containers">
       <a className="albumcovers"/* This is gonna target covers and targer url - {props.albums.href.url} */>
-        {props.albums.href.url}
       </a>
     </div>
   )
@@ -22,5 +21,6 @@ export default Album;
           <Album title={album.name} />
           <Album title={album.artists} />
         </div>
-      ))}
+      ))}   
+           {props.albums.href.url}
     </> */

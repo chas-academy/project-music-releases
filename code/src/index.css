@@ -19,12 +19,6 @@ header {
   width: 100%;
   border: 1px solid rgb(223, 25, 150);
 }
-.outer-wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
 
 .inner-wrapper {
   display: flex;
@@ -50,11 +44,13 @@ h1 {
 /*Albums container wich contains all the div albums */
 .album-container {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 25px;
   justify-content: center;
   margin: 20px;
   height: auto;
   width: 100%;
+  border: 2px solid purple;
 }
 /* Album images */
 img {
