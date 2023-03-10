@@ -1,13 +1,13 @@
 import React from 'react';
 
-// This is a component // This is the Artist component //
+// The Artist component //
 // exoprt beofre const //
 const Artists = (props) => {
   console.log(props);
   return (
     <>
       {props.artists.map((artist) => {
-        return <p>{artist.name}</p>
+        return <h3>{artist.name}</h3>
       })}
     </>
   )

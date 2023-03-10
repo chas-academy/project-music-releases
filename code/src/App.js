@@ -3,14 +3,12 @@ import './index.css';
 import Artists from 'Components/Artists'
 import Header from 'Components/Header'
 /* import Images from 'Components/Images' */
-
+import Album from 'Components/Album';
 import data from './data.json'
 
 console.log(data);
-
 export const App = () => {
   const imageIndex = 0; // index of the image you want to display
-
   return (
     <>
       <Header />
@@ -21,9 +19,9 @@ export const App = () => {
               <div className="Images">
                 <img src={album.images[imageIndex].url} alt={album.name} />
               </div>
-              <h2>{album.name}</h2>
               <a href={album.external_urls.spotify}>
                 <Artists artists={album.artists} />
+                <Album album={album} />
               </a>
             </div>
           ))}
@@ -32,23 +30,3 @@ export const App = () => {
     </>
   );
 }
-
-/* import React from 'react';
-import Header from 'components/Header';
-import Artists from 'components/Artists';
-import data from './data.json';
-
-console.log(data);
-
-export const App = () => {
-  return (
-    <>
-      {data.albums.items.map((album) => (
-        <div key={album.id}>
-          <Header title={album.name} />
-          <Artists artists={album.artists} />
-        </div>
-      ))}
-    </>
-  );
-} */

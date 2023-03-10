@@ -12,22 +12,37 @@ code {
 }
 
 
-
-
+/* The page´s mothership */
+div#root {
+  overflow-x: hidden;
+  margin: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-color: rgb(30, 30, 30);
+}
 
 /* HEADER */
 header {
   width: 100%;
   overflow-x: hidden;
 }
-/* New albums & singels */
+.header-line {
+  border-bottom: 1.5px solid #d8d8d8;
+  -webkit-filter: opacity(12%);
+  filter: opacity(15%);
+  margin: auto;
+  width: 100%;
+}
+
+/* New albums & singels text */
 h1 {
   color: #fbfbfb;
   font-size: 24px;
   padding: 10px;
   margin: 15px 12px 0;
 }
-/* Welcome to my Island */
+/* Album title */
 h2 {
   color: #ffffff;
   font-size: 14px;
@@ -35,8 +50,8 @@ h2 {
   margin: 7px 0 5px;
   font-weight: 650;
 }
-/* Album titles*/
-p {
+/* Artist name */
+h3 {
   color: #a0a0a0;
   font-family: Helvetica;
   font-size: 14px;
@@ -48,12 +63,6 @@ a {
   text-decoration: none;
 }
 
-.inner-wrapper {
-  display: flex;
-  width: 80%;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
 /* ALBUM  */
 /*The big container*/
 .parent-container {
@@ -66,75 +75,122 @@ a {
 .album-container {
   grid-template-columns: 1fr; 
   padding: 0 10px; 
-  
 }
 /* Album images */
-img {
+.Images img {
   height: auto;
   width: 100%;
 }
 
 
-div#root {
-    overflow-x: hidden;
-    margin: auto;
-    padding: 10px;
-    box-sizing: border-box;
-    overflow-x: hidden;
-    background-color: rgb(21, 21, 21);
-    
-  }
+/* HOVER EFFECTS */
+
+/* Hovers the album cover */
+.Images img:hover {
+  opacity: 0.3;
+  transition: 0.3s;
+}
+div h3:hover {
+  text-decoration: underline;
+  color: white;
+}
+div h2:hover {
+  text-decoration: underline;
+  color:white;
+}
+
+
+/*I THINK THIS IS IT*/
+.Images img:hover .icons-container {
+  opacity: 1;
+  display: flex;
+  background: rgba(0, 0, 0, 0.6);
+  /*Shows icons only when hovering*/
+}
+
+/*Shows icons when mouse is on album cover*/
+.icons-container:hover {
+  opacity: 0.9;
+}
 
 
 
+
+/* ICONS */
 .heart,
 .play,
 .dots {
   margin: 0 10px;
-  width: 20px;
-  height: 20px;
-
-}
+  width: 40px;
+  filter: invert(1);
+}  
 .icons-container {
-  position: absolute;
-  display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: aqua;
-  top:calc(50% - 25px);
-  left: calc(36% - 25px);
-  z-index: 1;
-  }
-  
-  .dots{
-   width: 30px;
-  }
-
-
-
- /* tablet */
- @media (min-width: 667px) and (max-width: 1024px){
- .album-container {
-     display: grid;
-     grid-template-columns: 1fr 1fr 1fr;
-     justify-self: center;
-     padding: 0 10px;
-     gap: 10px;
- }
+  transform: translate(-50%,-50%);
+  transition: .5s ease;
+  opacity: 0;
+  left: 148px;
+  bottom: 190px;
+  position: relative;
+  width: 60%;
+  display: absolute;
 }
 
-/* desktop */ 
-@media (min-width: 1025px) {
+
+
+
+
+
+.play{
+  transition: .2s ease-in-out;
+  }
+  .play:hover {
+    transition: 0.35s ease-in-out;
+    transform: scale(1.4);
+  }
+ 
+
+
+/* tablet */
+@media (min-width: 667px) and (max-width: 1024px){
   .album-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 25px;
-    justify-self: center;
-  } 
-}
-
-/* mobil */
-/* @media screen and (max-width: 480px) {
-  
-}
- */
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-self: center;
+      padding: 0 10px;
+      gap: 20px;
+  }
+  .icons-container{
+    display: block;
+    justify-content: center;
+    transform: translate(-50%,-50%);
+    transition: .5s ease;
+    opacity: 0;
+    left: 180px;
+    bottom: 233px;
+    position: relative;
+    width: 50%;
+    border: 1px solid red;
+   }
+  }
+ /* desktop */ 
+ @media (min-width: 1025px) {
+   .album-container {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     gap: 25px;
+     justify-self: center;
+   } 
+ .icons-container{
+  display: absolute;
+  justify-content: center;
+  transform: translate(-50%,-50%);
+  transition: .5s ease;
+  opacity: 0;
+  left: 144px;
+  bottom: 195px;
+  position: relative;
+  width: 65%;
+   }
+  }
+ 
