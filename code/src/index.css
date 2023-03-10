@@ -11,7 +11,7 @@ code {
     monospace;
 }
 
-/*- Artist name - 14px Helvetica #a0a0a0*/
+
 
 
 
@@ -19,13 +19,33 @@ code {
 header {
   width: 100%;
   overflow-x: hidden;
-  border: 1px solid rgb(223, 25, 150);
 }
 /* New albums & singels */
 h1 {
-  color: rgb(255, 255, 255);
-  border: 1px solid rgb(250, 0, 0);
-  text-align: center;
+  color: #fbfbfb;
+  font-size: 24px;
+  padding: 10px;
+  margin: 15px 12px 0;
+}
+/* Welcome to my Island */
+h2 {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: Helvetica;
+  margin: 7px 0 5px;
+  font-weight: 650;
+}
+/* Album titles*/
+p {
+  color: #a0a0a0;
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: 650;
+  margin-bottom: 10px;
+  margin-top: 1px;
+}
+a {
+  text-decoration: none;
 }
 
 .inner-wrapper {
@@ -53,13 +73,7 @@ img {
   height: auto;
   width: 100%;
 }
-/* Album titles*/
-p {
-  color: #ffffff;
-  border: 1px solid pink;
-  font-family: Helvetica;
-  font-size: 14px;
-}
+
 
 div#root {
     overflow-x: hidden;
@@ -67,7 +81,7 @@ div#root {
     padding: 10px;
     box-sizing: border-box;
     overflow-x: hidden;
-    background-color: black;
+    background-color: rgb(21, 21, 21);
     
   }
 
@@ -109,7 +123,6 @@ div#root {
  }
 }
 
-
 /* desktop */ 
 @media (min-width: 1025px) {
   .album-container {
@@ -117,9 +130,7 @@ div#root {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 25px;
     justify-self: center;
-    border: 3px solid rgb(255, 255, 255); 
-  }
-  
+  } 
 }
 
 /* mobil */
