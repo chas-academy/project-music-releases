@@ -41,6 +41,7 @@ h1 {
   font-size: 24px;
   padding: 10px;
   margin: 15px 12px 0;
+  text-align: center;
 }
 /* Album title */
 h2 {
@@ -172,6 +173,16 @@ div h2:hover {
     width: 50%;
     border: 1px solid red;
    }
+   /* New albums & singels text */
+  h1 {
+  color: #fbfbfb;
+  font-size: 24px;
+  padding: 10px;
+  margin: 15px 12px 0;
+  text-align: center;
+  display: block;
+  }
+
   }
  /* desktop */ 
  @media (min-width: 1025px) {
@@ -182,7 +193,7 @@ div h2:hover {
      justify-self: center;
    } 
  .icons-container{
-  display: absolute;
+  display: block;
   justify-content: center;
   transform: translate(-50%,-50%);
   transition: .5s ease;
@@ -191,6 +202,14 @@ div h2:hover {
   bottom: 195px;
   position: relative;
   width: 65%;
+   }
+   h1 {
+   color: #fbfbfb;
+   font-size: 24px;
+   padding: 10px;
+   margin: 15px 12px 0;
+   display: block;
+   text-align: start;
    }
   }
  
