@@ -57,8 +57,8 @@ h3 {
   font-family: Helvetica;
   font-size: 14px;
   font-weight: 650;
-  margin-bottom: 10px;
   margin-top: 1px;
+  margin-bottom: -11px;
 }
 a {
   text-decoration: none;
@@ -87,7 +87,7 @@ a {
 /* HOVER EFFECTS */
 
 /* Hovers the album cover */
-.Images img:hover {
+.Images:hover {
   opacity: 0.3;
   transition: 0.3s;
 }
@@ -100,20 +100,16 @@ div h2:hover {
   color:white;
 }
 
-
-/*I THINK THIS IS IT*/
-.Images img:hover .icons-container {
-  opacity: 1;
-  display: flex;
-  background: rgba(0, 0, 0, 0.6);
-  /*Shows icons only when hovering*/
-}
-
 /*Shows icons when mouse is on album cover*/
 .icons-container:hover {
-  opacity: 0.9;
+  opacity: 1;
+/*     display: flex; */
 }
 
+.image-container:hover + .icons-container {
+  opacity: 1;
+/*   display: flex; */
+}
 
 
 
@@ -124,7 +120,8 @@ div h2:hover {
   margin: 0 10px;
   width: 40px;
   filter: invert(1);
-}  
+}
+
 .icons-container {
   justify-content: center;
   transform: translate(-50%,-50%);
@@ -133,8 +130,8 @@ div h2:hover {
   left: 148px;
   bottom: 190px;
   position: relative;
-  width: 60%;
-  display: absolute;
+  width: 62%;
+/*   display: none; */
 }
 
 
@@ -171,8 +168,8 @@ div h2:hover {
     bottom: 233px;
     position: relative;
     width: 50%;
-    border: 1px solid red;
    }
+   
    /* New albums & singels text */
   h1 {
   color: #fbfbfb;
@@ -199,7 +196,7 @@ div h2:hover {
   transition: .5s ease;
   opacity: 0;
   left: 144px;
-  bottom: 195px;
+  bottom: 186px;
   position: relative;
   width: 65%;
    }
