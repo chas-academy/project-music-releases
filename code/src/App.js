@@ -21,6 +21,7 @@ export const App = () => {
               <div className="Images">
                 <img src={album.images[imageIndex].url} alt={album.name} />
               </div>
+              <h2>{album.name}</h2>
               <a href={album.external_urls.spotify}>
                 <Artists artists={album.artists} />
               </a>
