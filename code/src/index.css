@@ -52,15 +52,21 @@ h2 {
 }
 /* Artist name */
 h3 {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: Helvetica;
+  margin: 7px 0 5px;
+  font-weight: 650;
+  
+}
+a {
+  text-decoration: none;
   color: #a0a0a0;
   font-family: Helvetica;
   font-size: 14px;
   font-weight: 650;
  margin-bottom: 35px;
   margin-top: -87px;
-}
-a {
-  text-decoration: none;
 }
 
 
