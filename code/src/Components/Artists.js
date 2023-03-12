@@ -14,5 +14,3 @@ const Artists = (props) => {
 }
 // The Album function is avalible to all the other codes that we write //
 export default Artists;
-
-// THIS IS DONE DO NOT TOUCH :D //

@@ -1,5 +1,6 @@
 import React from 'react'
 
+// This is the Header component //
 const Header = () => {
   return (
     <header className="Header">
@@ -12,4 +13,3 @@ const Header = () => {
 
 export default Header;
 
-// THIS IS DONE - DO NOT TOUCH :D //

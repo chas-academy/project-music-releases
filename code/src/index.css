@@ -34,7 +34,6 @@ header {
   margin: auto;
   width: 100%;
 }
-
 /* New albums & singels text */
 h1 {
   color: #fbfbfb;
@@ -48,7 +47,7 @@ h2 {
   color: #ffffff;
   font-size: 14px;
   font-family: Helvetica;
-  margin: 7px 0 5px;
+  margin: 35px 0 5px;
   font-weight: 650;
 }
 /* Artist name */
@@ -57,12 +56,13 @@ h3 {
   font-family: Helvetica;
   font-size: 14px;
   font-weight: 650;
-  margin-top: 1px;
-  margin-bottom: -11px;
+ margin-bottom: 35px;
+  margin-top: -87px;
 }
 a {
   text-decoration: none;
 }
+
 
 /* ALBUM  */
 /*The big container*/
@@ -84,8 +84,8 @@ a {
 }
 
 
-/* HOVER EFFECTS */
 
+/* HOVER EFFECTS */
 /* Hovers the album cover */
 .Images:hover {
   opacity: 0.3;
@@ -99,13 +99,11 @@ div h2:hover {
   text-decoration: underline;
   color:white;
 }
-
-/*Shows icons when mouse is on album cover*/
+/*Shows icons when mouse is on album cover- this does not work*/
 .icons-container:hover {
   opacity: 1;
 /*     display: flex; */
 }
-
 .image-container:hover + .icons-container {
   opacity: 1;
 /*   display: flex; */
@@ -121,7 +119,7 @@ div h2:hover {
   width: 40px;
   filter: invert(1);
 }
-
+/* All the icons */
 .icons-container {
   justify-content: center;
   transform: translate(-50%,-50%);
@@ -131,14 +129,8 @@ div h2:hover {
   bottom: 190px;
   position: relative;
   width: 62%;
-/*   display: none; */
 }
-
-
-
-
-
-
+/* Play icon */
 .play{
   transition: .2s ease-in-out;
   }
@@ -151,6 +143,9 @@ div h2:hover {
 
 /* tablet */
 @media (min-width: 667px) and (max-width: 1024px){
+  body {
+    margin: 0;
+  }
   .album-container {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -179,6 +174,23 @@ div h2:hover {
   text-align: center;
   display: block;
   }
+  h2 {
+    color: #ffffff;
+    font-size: 14px;
+    font-family: Helvetica;
+    margin-top: 20px;
+    font-weight: 650;
+    margin-bottom: 10px;
+}
+h3 {
+  margin-top: -100px;
+  margin-bottom: 5px;
+  
+}
+img {
+  margin-bottom: 20px;
+}
+
 
   }
  /* desktop */ 
@@ -200,13 +212,20 @@ div h2:hover {
   position: relative;
   width: 65%;
    }
+      /* New albums & singels text */
    h1 {
    color: #fbfbfb;
    font-size: 24px;
    padding: 10px;
-   margin: 15px 12px 0;
+   margin: 15px 12px 5px;
    display: block;
    text-align: start;
+   }
+   h2 {
+    margin-top: 0px;
+   }
+   h3 {
+    margin-bottom: 5px;
    }
   }
  

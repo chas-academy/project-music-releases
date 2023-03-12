@@ -1,7 +1,7 @@
 /* eslint-disable no-lone-blocks */
 import React from 'react'
 
-// This is a component // This is the Images component //
+// This is the Images component //
 const Images = (props) => {
   console.log(props);
   return (
@@ -20,5 +20,5 @@ const Images = (props) => {
   )
 }
 
-// Our Images function is avalible to all the other codes that I´ll write //
+// Our Images function is avalible to all the other codes that we´ll write //
 export default Images;

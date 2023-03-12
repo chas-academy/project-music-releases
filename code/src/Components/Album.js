@@ -20,12 +20,3 @@ const Album = (props) => {
   );
 };
 export default Album;
-
-/* Annika, I tooked a look at our js. and removed this down under here,
-it looks like we don´t really need them? We should look this up:) */
-
-/* The <p>{props.title}</p> seem to not have an affect on our page? */
-/* Also, <a className="albumcovers" href={props.album.href.url}> Album Cover</a>
-does not have an affect on our site either?  */
-
-/* The h2 --> {props.album.name} is the album names on our page */
