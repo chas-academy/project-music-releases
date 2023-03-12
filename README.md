@@ -1,11 +1,10 @@
 # Music Releases
-Created a page with 
-
+Pair programming project to practise React and creating components by using data from Spotify. The task was to build a page which shows new album and single releases. 
 Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+We had a hard time with the hover and the Icons. For some reason the Icons only appear when having the pointer over the Icons. 
 
 ## View it live
 
