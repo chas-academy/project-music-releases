@@ -4,9 +4,9 @@ const Album = (props) => {
   console.log(props);
   return (
     <div className="album-containers">
-      <p>{props.title}</p>
+      <p>{props.album.name}</p>
       <div key={props.album.id}>
-        <h2>{props.album.name}</h2>
+        <h2>{props.title}</h2>
 
         <div className="icons-container">
           <a href={props.album.external_urls.spotify}>

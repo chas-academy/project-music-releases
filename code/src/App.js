@@ -20,8 +20,8 @@ export const App = () => {
                 <img src={album.images[imageIndex].url} alt={album.name} />
               </div>
               <a href={album.external_urls.spotify}>
-                <Artists artists={album.artists} />
                 <Album album={album} />
+                <Artists artists={album.artists} />
               </a>
             </div>
           ))}
